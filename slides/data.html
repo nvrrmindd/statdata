@@ -1,0 +1,29 @@
+<section id="data" data-transition="fade" style="background:#fbfbf8; color:#1c2230; font-family:'IBM Plex Sans', Arial, sans-serif; padding:112px 128px 160px; display:flex; flex-direction:column; gap:36px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; color:#2463b4; letter-spacing:2px; text-transform:uppercase">Результат 1 · Какие данные у нас есть</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:60px; font-weight:600; line-height:1.1">236 таблиц и 72,6 млн строк: восемь форм за 2021–2024 годы</h2>
+</div>
+<div style="display:flex; gap:48px; align-items:start">
+<div style="flex:1; display:flex; flex-direction:column; gap:20px">
+<table style="font-size:24px; color:#1c2230">
+<tr><th style="width:17%">Форма</th><th style="width:37%">Что измеряет</th><th style="width:18%; text-align:right">Строк</th><th style="width:28%">Единиц в год</th></tr>
+<tr><td>Т-001</td><td>Рабочая сила, занятость</td><td style="text-align:right">1,89 млн</td><td>~470 тыс. чел. 15+</td></tr>
+<tr><td>2-Т</td><td>Зарплата работников</td><td style="text-align:right">7,33 млн</td><td>560–640 тыс. чел.</td></tr>
+<tr><td>1-Т кв.</td><td>Предприятия, квартал</td><td style="text-align:right">24,5 млн</td><td>29–32 тыс. предпр.</td></tr>
+<tr><td>1-Т год</td><td>Предприятия, год</td><td style="text-align:right">30,0 млн</td><td>71–84 тыс.; 2024: 52</td></tr>
+<tr><td>Д-004</td><td>Доходы и расходы ДХ</td><td style="text-align:right">8,61 млн</td><td>12 000 ДХ × 4 кв.</td></tr>
+<tr><td>Д-008</td><td>Состав домохозяйства</td><td style="text-align:right">169 тыс.</td><td>~42 тыс. чел.</td></tr>
+<tr><td>Д-002</td><td>Самооценки</td><td style="text-align:right">95,5 тыс.</td><td>~12 тыс. чел.</td></tr>
+<tr><td>Д-006</td><td>Жилищные условия</td><td style="text-align:right">46,7 тыс.</td><td>~11,7 тыс. ДХ</td></tr>
+</table>
+<p style="font-size:24px; color:#4a5160; line-height:1.4">Формы связываются ключами: <b>NOMER</b> — домохозяйство (Д-002…Д-008), <b>ID</b> — предприятие (1-Т, 2-Т).</p>
+</div>
+<div style="width:660px; display:flex; flex-direction:column; gap:12px">
+<h3 style="font-size:28px; font-weight:600">Доля пустых ячеек по форме и году</h3>
+<img src="/_blob/6b2c786de5e65c420dded3d49d256b07" alt="Тепловая карта доли пустых ячеек: Т-001 23–27%, 2-Т 6–9%, 1-Т квартальная с 21% до 8%, 1-Т годовая с 58% до 34%, Д-004 10–12%, Д-002 с 11% до 42%, Д-008 40–43%, Д-006 66–67%" style="width:600px; height:442px; object-fit:contain">
+<p style="font-size:24px; color:#4a5160; line-height:1.35">Пропуски в основном структурные: разрезы и переходы в анкете, а не потерянные ответы.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#6a7080">Синтетические микроданные БНС РК 2021–2024 · расчёты команды · 1/3</p>
+<aside>Всего 8 форм, 236 CSV-таблиц, 72,6 млн строк, 4,4 ГБ. Самые объёмные — отчёты предприятий 1-Т (54,5 млн строк вместе с квартальной). Для домохозяйств — панель 12 000 ДХ, которые повторяются по кварталам и годам. Пропуски: высокая доля пустых ячеек у 1-Т годовой и Д-006 объясняется форматом «длинной» таблицы (у каждой строки заполнен только свой разрез) и переходами анкеты. В 2024 году в 1-Т годовой 52 тыс. предприятий против 84 тыс. в 2023-м — изменился охват, поэтому межгодовые сравнения по 1-Т годовой делаем по медианам, не по суммам. Формат данных тоже меняется по годам: KATO из 2 знаков стал 9-значным, GR1 → VAL_NUM, а в Т-001 одно значение записано с ошибкой кавычек — всё это мы привели к единому виду.</aside>
+</section>
